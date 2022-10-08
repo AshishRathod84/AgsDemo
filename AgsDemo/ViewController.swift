@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyFramework
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onClickPush(_ sender: UIButton) {
+        self.navigationController?.pushViewController(FirstViewController(), animated: true)
+    }
+    
 }
 
